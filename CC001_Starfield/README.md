@@ -9,5 +9,5 @@ The trick is to use z-scaling.
 I left the option to render dots or lines in the code.  
 Moving past the center changes the rendering from dots to lines.  
   
-**See the original here:**  
+**See the original challenge here:**  
 https://thecodingtrain.com/CodingChallenges/001-starfield.html
