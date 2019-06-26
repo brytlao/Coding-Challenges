@@ -6,7 +6,7 @@ The terrain is procedurally generated using a mesh.
 The smoothness is achieved using Perlin noise.  
 
 **Additions:**  
-Plane and walls added for effect.  
+Plane and walls are added for effect.  
 The sketch doesn't render well in Chrome for some reason.  
   
 **See the original challenge here:**  
