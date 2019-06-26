@@ -10,7 +10,7 @@ Walls and plane control are added for effect.
 The sketch doesn't render well in Chrome for some reason.  
   
 **See the original challenge here:**  
-https://thecodingtrain.com/CodingChallenges/001-starfield.html
+https://thecodingtrain.com/CodingChallenges/011-perlinnoiseterrain.html
 
 **Inspired by:**  
 https://owenmcateer.github.io/Motus-Art/projects/week_07.html
