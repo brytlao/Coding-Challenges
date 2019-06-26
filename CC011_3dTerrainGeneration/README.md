@@ -1,7 +1,7 @@
 Coding Challenge 011: 3D Terrain Generation
 
 **Description:**  
-Cruise your paper plane through the trenchy terrain.
+Cruise your paper plane through the trenchy terrain.  
 The terrain is procedurally generated using a mesh.  
 The smoothness is achieved using Perlin noise.  
 
