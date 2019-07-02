@@ -2,7 +2,7 @@ Coding Challenge 024: Perlin Noise Flow Field
 
 **Description:**  
 Particles dance around a 2D toroidal world.  
-2D simulation of systems moving in a vector field.  
+2D simulation of particle systems moving in a vector field.  
 The Perlin noise field makes pleasing patterns.  
 
 **Additions:**  
