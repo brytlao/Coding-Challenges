@@ -4,7 +4,8 @@ FlowField field;
 ArrayList < ParticleSystem > drops;
 int init_drop_num = 1;
 
-color[] colorOptions = {
+color[] color_options = {
+	color(0, 0, 0),
 	color(41, 52, 98),
 	color(247, 98, 98),
 	color(255, 241, 193),
@@ -43,18 +44,26 @@ void draw() {
 	for (ParticleSystem d: drops) {
 		d.update(field);
 	}
+
+	// color bar
+	drawBar(color_options);
 }
 
-color nextColor() {
-	color_index++;
-	if (color_index >= colorOptions.length) {
-		color_index = 0;
+void drawBar(color[] in_colors) {
+	int num_colors = in_colors.length;
+	float seg_width = width / num_colors;
+	float seg_height = height * 0.05;
+	
+	// set color
+	int color_index = floor(map(mouseX, 0, width, 0, num_colors));
+	color color_show = in_colors[color_index];
+	drops.get(0).setColor(color_show);
+	
+	// render bar
+	for (int i = 0; i < num_colors; i++) {
+		fill(in_colors[i]);
+		noStroke();
+		rect(i * seg_width, height - seg_height,
+			seg_width, seg_height);
 	}
-	return colorOptions[color_index];
-}
-
-void mouseReleased() {
-	drops.add(new ParticleSystem());
-	drops.get(drop_counter).setColor(nextColor());
-	drop_counter++;
 }
