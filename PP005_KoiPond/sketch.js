@@ -1,16 +1,17 @@
-// Personal Projects #6: Koi Pond
+// Personal Projects #5: Koi Pond
 
 let kois = [];
 let len;
 let feeds = [];
+const numKois = 20;
 
 function setup() {
   //createCanvas(600, 600);
   createCanvas(windowWidth, windowHeight);
 
   // kois
-  scaleFishSizes(1.2);
-  const di = TWO_PI / 10;
+  scaleFishSizes(0.6);
+  const di = TWO_PI / numKois;
   for (let i = 0; i < TWO_PI; i += di) {
     const x = width / 2 + cos(i) * 100;
     const y = height / 2 + sin(i) * 100;

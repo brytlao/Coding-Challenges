@@ -3,8 +3,8 @@ let marginSizes = [2, 2, 2, 2, 2, 2, 2, 2];
 let fishWidth = 15;
 let fishLength = 20;
 let fishSpeed = 3;
-const pecFinSize = 100;
-const analFinSize = 50;
+let pecFinSize = 84;
+let analFinSize = 42;
 
 class Fish {
   constructor(arg1, arg2) {
@@ -149,7 +149,9 @@ function scaleFishSizes(inScl) {
   }
   fishWidth *= inScl;
   fishLength *= inScl;
-
+  pecFinSize *= inScl;
+  analFinSize *= inScl;
+  
   // margin size
   for (let i = 0; i < marginSizes.length; i++) {
     marginSizes[i] *= inScl;
